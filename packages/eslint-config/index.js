@@ -1,4 +1,8 @@
 module.exports = {
-  extends: ["next", "prettier"],
-  rules: {},
+  overrides: [
+    {
+      files: ["*.ts*"],
+      extends: ["prettier"],
+    },
+  ],
 };

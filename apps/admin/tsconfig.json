@@ -1,0 +1,11 @@
+{
+  "extends": "@turbyo/ts-config/remix.json",
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": "./app",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}

@@ -4,15 +4,10 @@
   "main": "./index.tsx",
   "types": "./index.tsx",
   "license": "MIT",
-  "scripts": {
-    "lint": "eslint *.ts*"
-  },
   "devDependencies": {
-    "@turbyo/eslint-config": "workspace:*",
     "@turbyo/ts-config": "workspace:*",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-    "eslint": "^8.18.0",
     "react": "^18.2.0",
     "typescript": "^4.5.2"
   }
