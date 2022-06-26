@@ -1,8 +1,8 @@
-const withTM = require("next-transpile-modules")(["@turbyo/ui", "@turbyo/api"]);
+const withTM = require("next-transpile-modules")(["@turbyo/ui"]);
 
 module.exports = withTM({
   reactStrictMode: true,
-  experiment: {
+  experimental: {
     externalDir: true,
   },
 });
