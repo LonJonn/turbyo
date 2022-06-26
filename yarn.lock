@@ -2124,6 +2124,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@turbyo/api@workspace:^, @turbyo/api@workspace:packages/api":
+  version: 0.0.0-use.local
+  resolution: "@turbyo/api@workspace:packages/api"
+  dependencies:
+    "@prisma/client": ^3.15.2
+    prisma: ^3.15.2
+    tiny-invariant: ^1.2.0
+  languageName: unknown
+  linkType: soft
+
 "@turbyo/eslint-config@workspace:*, @turbyo/eslint-config@workspace:^0.0.0, @turbyo/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@turbyo/eslint-config@workspace:packages/eslint-config"
@@ -2645,7 +2655,6 @@ __metadata:
   dependencies:
     "@headlessui/react": ^1.6.5
     "@heroicons/react": ^1.0.6
-    "@prisma/client": ^3.15.2
     "@remix-run/dev": ^1.6.1
     "@remix-run/eslint-config": ^1.6.1
     "@remix-run/node": ^1.6.1
@@ -2653,6 +2662,7 @@ __metadata:
     "@remix-run/serve": ^1.6.1
     "@remix-run/vercel": ^1.6.1
     "@tailwindcss/forms": ^0.5.2
+    "@turbyo/api": "workspace:^"
     "@turbyo/eslint-config": "workspace:^0.0.0"
     "@turbyo/ts-config": "workspace:*"
     "@turbyo/ui": "workspace:^0.0.0"
@@ -2664,7 +2674,6 @@ __metadata:
     eslint: ^8.18.0
     prettier: ^2.7.1
     prettier-plugin-tailwindcss: ^0.1.11
-    prisma: ^3.15.2
     react: ^18.2.0
     react-dom: ^18.2.0
     tailwindcss: ^3.1.4

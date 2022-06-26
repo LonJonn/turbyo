@@ -1,8 +1,8 @@
 import type { HeadersFunction, LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 
-import { prisma } from "@/utils/db.server";
-import type { User } from "@prisma/client";
+import { prisma } from "@turbyo/api";
+import type { User } from "@turbyo/api";
 import { Link, Outlet, useLoaderData } from "@remix-run/react";
 
 import { FilterIcon, SearchIcon } from "@heroicons/react/solid";
