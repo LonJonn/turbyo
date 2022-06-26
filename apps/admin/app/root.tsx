@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import MainLayout from "./layouts/MainLayout";
 
 import styles from "./styles/app.css";
 
@@ -28,7 +29,9 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full overflow-hidden">
-        <Outlet />
+        <MainLayout>
+          <Outlet />
+        </MainLayout>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
