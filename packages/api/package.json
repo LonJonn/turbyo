@@ -5,11 +5,11 @@
   "scripts": {
     "db:gen": "prisma generate"
   },
-  "devDependencies": {
-    "prisma": "^3.15.2"
-  },
   "dependencies": {
     "@prisma/client": "^3.15.2",
     "tiny-invariant": "^1.2.0"
+  },
+  "devDependencies": {
+    "prisma": "^3.15.2"
   }
 }

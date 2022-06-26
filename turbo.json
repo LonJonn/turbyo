@@ -17,6 +17,9 @@
     },
     "dev": {
       "cache": false
+    },
+    "db:gen": {
+      "cache": false
     }
   }
 }

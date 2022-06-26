@@ -12,7 +12,8 @@
     "build:admin": "turbo run build --filter=admin",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md,css}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md,css}\"",
+    "db:gen": "turbo run db:gen"
   },
   "devDependencies": {
     "prettier": "^2.7.1",
