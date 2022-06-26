@@ -10989,6 +10989,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web@workspace:apps/web"
   dependencies:
+    "@turbyo/api": "workspace:^"
     "@turbyo/eslint-config": "workspace:*"
     "@turbyo/ts-config": "workspace:*"
     "@turbyo/ui": "workspace:*"

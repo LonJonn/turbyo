@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@turbyo/api": "workspace:^",
     "@turbyo/ui": "workspace:*",
     "next": "12.1.6",
     "react": "18.2.0",
