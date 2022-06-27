@@ -12,6 +12,7 @@ coverage
 .next/
 out/
 build
+dist
 tsconfig.tsbuildinfo
 
 # misc
