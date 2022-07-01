@@ -43,8 +43,5 @@
   },
   "engines": {
     "node": ">=14"
-  },
-  "installConfig": {
-    "hoistingLimits": "workspaces"
   }
 }
