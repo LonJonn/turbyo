@@ -10,7 +10,7 @@
     },
     "admin#build": {
       "dependsOn": ["^build"],
-      "outputs": ["api/index.js", "public/build/**"]
+      "outputs": ["api/**", "public/build/**"]
     },
     "lint": {
       "outputs": []
