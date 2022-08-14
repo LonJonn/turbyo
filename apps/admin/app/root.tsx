@@ -175,7 +175,7 @@ export function MainLayout({ children }: Props) {
       </div>
 
       {/* Content */}
-      <div className="flex grow overflow-hidden">
+      <div className="flex grow overflow-hidden p-4">
         <Suspense>{children}</Suspense>
       </div>
     </div>

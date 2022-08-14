@@ -1,10 +1,25 @@
-import type { HeadersFunction, LoaderFunction } from "@remix-run/node";
-import { redirect } from "@remix-run/node";
+import { json } from "@remix-run/node";
+import { useLoaderData } from "@remix-run/react";
 
-export const headers: HeadersFunction = ({ parentHeaders }) => ({
-  "Cache-Control": parentHeaders.get("Cache-Control") || "",
-});
+export function loader() {
+  const dateTime = new Date();
+  return json(dateTime, {
+    headers: { "Cache-Control": "s-maxage=5, stale-while-revalidate=5" },
+  });
+}
 
-export const loader: LoaderFunction = async () => {
-  return redirect("/users");
-};
+export default function Index() {
+  const dateTime = useLoaderData<typeof loader>();
+
+  return (
+    <div>
+      <p>Wassup im index hehe XD</p>
+      <time dateTime={dateTime}>
+        {new Date(dateTime).toLocaleString("en-AU", {
+          dateStyle: "medium",
+          timeStyle: "medium",
+        })}
+      </time>
+    </div>
+  );
+}
