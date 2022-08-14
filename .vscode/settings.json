@@ -1,5 +1,4 @@
 {
-  "eslint.packageManager": "yarn",
   "eslint.workingDirectories": [
     {
       "pattern": "apps/*"
